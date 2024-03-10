@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+:root 
+{
+    --Primaryfont:  "Work Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sliderhomesection
+{
+    .chatwithus
+    {
+        position: fixed;
+        right: 14%;
+    top:75%;
+       
+        button 
+        {
+            background-color:#3838c7;
+            padding:8px 20px;
+            border:1px solid white;
+            color:white;
+            border-radius: 24px;
+            font: var(--Primaryfont);
+            font-weight: 500 !important;
+            font-size: 15px;
+            gap:10px;
+            &:hover 
+            {
+                background-color: #1717a3;
+            }
+            img 
+            {
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+                object-fit: cover;
+            }
+            p 
+            {
+                color:white;
+                font-family: var(--Primaryfont);
+                font-size: 14px;
+                font-weight: 600 !important;
+            }
+        }
+      
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.heropage
+{
+    padding-top: 80px;
+    input 
+    {
+        border-radius: 5px 20px 20px 5px;
+        outline: none;
+        &::placeholder 
+        {
+            font-size: 15px;
+            font-weight: 600 !important;
+            text-transform: capitalize;
+        }
+    }
+    .btnlist
+    {
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        p 
+        {
+            color:white;
+            font-family: var(--Primaryfont);
+            font-size: 16px;
+            font-weight: 600 !important;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+        }
+        button 
+        {
+            background-color: #5b5beb;
+            padding:6px 20px;
+            border:1px solid white;
+            color:white;
+            border-radius: 24px;
+            font: var(--Primaryfont);
+            font-weight: 500 !important;
+            font-size: 15px;
+            margin:0 8px;
+            &:hover 
+            {
+                background-color: #1717a3;
+            }
+        }
+    }
+   
 }
-
-.App-link {
-  color: #61dafb;
+.main-nav
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding:30px 0;
+    z-index: 1;
+    h3 
+    {
+        font-size: 30px;
+        font-family: var(--Primaryfont);
+        color: white;
+        font-weight: 700 !important;
+    }
+    ul 
+    {
+        display: flex;
+        justify-content: end;
+        gap:4em;
+        li 
+        {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            gap:8px;
+        }
+        button 
+        {
+            background-color:#3838c7;
+            padding:4px 20px;
+            border:1px solid white;
+            color:white;
+            border-radius: 5px;
+            font: var(--Primaryfont);
+            font-weight: 600 !important;
+            font-size: 15px;
+            text-transform: uppercase;
+            &:hover 
+            {
+                background-color: #1717a3;
+            }
+        }
+    }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.popularservices
+{
+    padding:30px 0;
+p 
+    {
+        text-align: center;
+        color:rgb(49, 48, 48);
+        font-weight: var(--Primaryfont);
+        font-size: 18px;
+        font-weight: 500 !important;
+        text-transform: uppercase;
+    }
+    figure 
+    {
+        margin-top: 20px;
+        img 
+        {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+    }
 }
