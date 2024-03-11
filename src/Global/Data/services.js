@@ -1,11 +1,11 @@
 export const services =[
     {
-        title:'Seo',
-        images:'./images/serviceC.jpg'
+        title:'AI Services',
+        images:'./images/ai.jpg'
     },
     {
         title:'Digital Marketing',
-        images:'./images/serviceC.jpg'
+        images:'./images/serviceD.jpg'
     },
     {
         title:'Seo Optimization',
@@ -17,11 +17,11 @@ export const services =[
     },
     {
         title:'Software Testing',
-        images:'./images/serviceD.jpg'
+        images:'./images/serviceC.jpg'
     },
     {
         title:'Social Media',
-        images:'./images/serviceB.jpg'
+        images:'./images/serviceD.jpg'
     },
     {
         title:'App Design',

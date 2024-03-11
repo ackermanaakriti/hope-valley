@@ -3,46 +3,45 @@
     --Primaryfont:  "Work Sans", sans-serif;
 }
 
+.chatwithus
+{
+   
+    button 
+    {
+        background-color:#3838c7;
+        padding:8px 20px;
+        border:1px solid white;
+        color:white;
+        border-radius: 24px;
+        font: var(--Primaryfont);
+        font-weight: 500 !important;
+        font-size: 15px;
+        gap:10px;
+        &:hover 
+        {
+            background-color: #1717a3;
+        }
+        img 
+        {
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            object-fit: cover;
+        }
+        p 
+        {
+            color:white;
+            font-family: var(--Primaryfont);
+            font-size: 14px;
+            font-weight: 600 !important;
+        }
+    }
+  
+}
+
 .sliderhomesection
 {
-    .chatwithus
-    {
-        position: fixed;
-        right: 14%;
-    top:75%;
-       
-        button 
-        {
-            background-color:#3838c7;
-            padding:8px 20px;
-            border:1px solid white;
-            color:white;
-            border-radius: 24px;
-            font: var(--Primaryfont);
-            font-weight: 500 !important;
-            font-size: 15px;
-            gap:10px;
-            &:hover 
-            {
-                background-color: #1717a3;
-            }
-            img 
-            {
-                border-radius: 50%;
-                height: 30px;
-                width: 30px;
-                object-fit: cover;
-            }
-            p 
-            {
-                color:white;
-                font-family: var(--Primaryfont);
-                font-size: 14px;
-                font-weight: 600 !important;
-            }
-        }
-      
-    }
+   
 }
 
 .heropage
@@ -91,6 +90,7 @@
     }
    
 }
+
 .main-nav
 {
     position: absolute;
@@ -99,6 +99,17 @@
     width: 100%;
     padding:30px 0;
     z-index: 1;
+
+    &.sticky-navbar
+{
+    position: fixed;
+    padding:40px 0;
+    background-color: #d1c8fa;
+    li 
+    {
+        color:black
+    }
+}
     h3 
     {
         font-size: 30px;
@@ -140,7 +151,7 @@
 }
 .popularservices
 {
-    padding:30px 0;
+    padding:40px 0 80px 0px;
 p 
     {
         text-align: center;
@@ -159,5 +170,15 @@ p
             object-fit: cover;
             border-radius: 15px;
         }
+    }
+}
+.projectbased
+{
+    .proj-content
+    {
+        background-color: white;
+        border:2px solid #6b6fe9;
+        border-radius: 10px;
+        padding:30px;
     }
 }

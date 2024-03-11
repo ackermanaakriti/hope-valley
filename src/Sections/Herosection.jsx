@@ -21,7 +21,7 @@ const Herosection = ({image,description}) => {
               </div>
             </div>
             <div className='relative'>
-              <figure className='h-[690px] relative'>
+              <figure className='h-[720px] relative'>
                 <img className='h-[100%]' src={image}/>
               </figure>
              

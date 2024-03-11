@@ -21,7 +21,7 @@ const PopularServices = () => {
   <div className='popularservices'>
    
     <div className='container mx-auto'>
-        <div className='py-[30px]'>
+        <div className='py-[30px] '>
         <h3 className='text-[38px] font-semibold text-PrimaryColor font-karla'>Our Popular Services</h3>
         </div>
         <div>

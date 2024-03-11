@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 export default function Heropageslider() {
   var settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -25,12 +25,15 @@ export default function Heropageslider() {
        <Herosection key={index} image={data.image} description={data.description}/>
      ))}
     </Slider>
+    <div className="absolute top-[75%] right-[14%]">
     <div className='chatwithus'>
                 <button className='flex items-center '>
                   <img src='./images/girlA.png'/>
                   <p className='uppercase'>Chat With us</p>
                 </button>
               </div>
+    </div>
+   
     </div>
   );
 }
