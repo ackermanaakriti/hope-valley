@@ -4,14 +4,14 @@ import { FaGlobe } from "react-icons/fa";
 
 
 const MainNavbar = () => {
-   const ref = useRef()
+   const navref = useRef()
    useEffect(() => {
       const handleScroll = () => {
-        if (ref.current) { 
+        if (navref.current) { 
           if (window.scrollY > 200) {
-            ref.current.classList.add('sticky-navbar');
+            navref.current.classList.add('sticky-navbar');
           } else {
-            ref.current.classList.remove('sticky-navbar');
+            navref.current.classList.remove('sticky-navbar');
           }
         }
       };
@@ -27,7 +27,8 @@ const MainNavbar = () => {
   
    
   return (
-   <div ref={ref}  className='main-nav '>
+    <>
+     <div ref={navref}  className='main-nav '>
     <div className=' container mx-auto grid grid-cols-3'>
      <div className='col-span-1'>
         <h3>HOPE VALLEY</h3>
@@ -41,11 +42,14 @@ const MainNavbar = () => {
                 {navitems.name}
             </li>
          ))}
-         <button>Join Us Team</button>
+         <button>Join Our Team</button>
         </ul>
      </div>
     </div>
    </div>
+   <div></div>
+   </>
+  
   )
 }
 

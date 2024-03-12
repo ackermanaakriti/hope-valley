@@ -32,3 +32,23 @@ export const services =[
         images:'./images/serviceC.jpg'
     },
 ]
+
+export const projects =[
+    {
+        title:'Mock ups',
+        image:'./images/productA.jpg'
+    },
+    {
+        title:'Branding Identify and Design',
+        image:'./images/productB.jpg'
+    },
+    {
+        title:'Ui/Ux Design',
+        image:'./images/productF.jpg'
+       
+    },
+    {
+        title:'Social Media',
+        image:'./images/productD.jpg'
+    },
+]

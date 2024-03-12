@@ -16,10 +16,13 @@ export default function Heropageslider() {
     autoplay: true,
     speed: 4000,
     autoplaySpeed: 1000,
+    arrows:false
   };
   return (
     <div className="sliderhomesection">
-    <Slider {...settings}>
+    <Slider {
+      
+      ...settings}>
      {sliderdata.map((data,index)=>
      (
        <Herosection key={index} image={data.image} description={data.description}/>
